@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Bulma, JavaScript">
+    <meta name="author" content="Vasco Marques">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=quicksand@600,700,400,500&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>tabascum.io</title>
+</head>
+
+<body class="container bg-dark text-light">
+    <!-- Navbar -->
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg nav-pills navbar-dark pt-4">
+            <div class="container">
+                <div class="navbar-brand text-success border border-2 pt-2 ps-2 pe-2 fs-1 shadow" href="#">
+                    <h1 class="fw-bolder fs-1">VM</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link text-success m-2" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success m-2" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success m-2" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link m-2 text-success border rounded-0" data-bs-toggle="offcanvas"
+                                href="#offcanvasContact" role="button" aria-controls="offcanvasContact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero section -->
+    <div class="container text-center border-start border-end border-info py-5">
+        <div class="container text-center border-start border-end border-info py-5">
+            <div class="py-5">
+                <div class="py-5">
+                    <p>Hi, I am</p>
+                    <h2 class="fw-semibold">VASCO MARQUES</h2>
+                    <h1 class="text-success fw-bolder typedOut">FRONTEND WEB DEVELOPER</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container">
+        <!-- About section -->
+        <div class="row about my-5">
+            <div class="row row-cols-md-2 cols-sm-1 g-1 text-center justify-content-center" id="about">
+                <div class="row-cols-2">
+                    <img class="img-fluid rounded-circle" src="./img/profile.webp" alt="personal picture">
+                </div>
+                <div class="cols">
+                    <div class="container text-start">
+                        <h1 class="text-success border-bottom border-info fw-semibold">WHO AM I?</h1>
+                        <p>I'm a front-end web developer based in Lisbon, Portugal.</p>
+                        <p>Commited with the projects I'm working with, I'm driven by curiosity and the aim to present
+                            the
+                            best results.</p>
+                        <p>If I'm not coding, I'll probably be reading, listening to music, learning new IT skills or
+                            travelling.</p>
+                        <p>Want to know more? Check out my <em>projects</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Projects container -->
+        <div class="container projects row py-5" id="work">
+            <div class="text-end">
+                <h1 class="text-success border-bottom border-info fw-semibold">PROJECTS</h1>
+                <p>Here are some of the projects I've built with HTML, CSS and JS</p>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-2">
+                <div class="col">
+                    <div class="card rounded-0 border-0 shadow bg-dark">
+                        <img src="./img/parallax.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Parties Landing Page</h5>
+                            <p class="card-text">This is a landing page with parallax effect in two ways : JS and CSS
+                            </p>
+                            <div class="d-flex justify-content-end">
+                                <a href="https://tabascum.github.io/parallax-effects/"
+                                    class="btn btn-outline-success">Live Preview <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-0 border-0 shadow bg-dark">
+                        <img src="./img/avoidthebush.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Game</h5>
+                            <p class="card-text">JS game inspired in Mario Bros to make the frog jump.</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="https://tabascum.github.io/avoid-the-bush-game/"
+                                    class="btn btn-outline-success">Live Preview <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-0 border-0 shadow bg-dark">
+                        <img src="./img/barberlandingpage.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Barbershop Landing Page</h5>
+                            <p class="card-text">This landing page displays a form and two modals</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="https://tabascum.github.io/newbarberlandingpage/"
+                                    class="btn btn-outline-success">Live Preview <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card rounded-0 border-0 shadow bg-dark">
+                        <img src="./img/calc.webp" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculator</h5>
+                            <p class="card-text">A simple math calculator with JS</p>
+                            <div class="d-flex justify-content-end">
+                                <a href="https://tabascum.github.io/calculator/" class="btn btn-outline-success">Live
+                                    Preview <i class="bi bi-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Offcanvas -->
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasContact"
+            aria-labelledby="offcanvasContact">
+            <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="container-fluid contact py-5">
+                    <div class="container contact-header p-3">
+                        <h1 class="border-bottom text-success border-info fw-semibold">CONTACT</h1>
+                        <p>Want know more about my work?</p>
+                        <p>Feel free to send me a message!</p>
+                    </div>
+                    <div class="p-3 bg-info">
+                        <div class="row">
+                            <div class="col">
+                                <label for="name" class="text-success">name</label>
+                                <input type="text" class="form-control bg-success rounded-0 border-0" placeholder=""
+                                    aria-label="name" required>
+                            </div>
+                            <div class="col">
+                                <label for="email" class="text-success">email</label>
+                                <input type="text" class="form-control bg-success rounded-0 border-0" placeholder=""
+                                    aria-label="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="textarea" class="form-label mb-0 text-success" required>message</label>
+                                <textarea class="form-control bg-success rounded-0 border-0" id="textarea"
+                                    rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-outline-success rounded-0 " type="submit">send</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex gap-3 text-center mt-3 justify-content-center">
+                    <a class="btn btn-lg btn-outline-success fs-2 rounded-0" href="https://github.com/tabascum"><i
+                            class="bi bi-github"></i></a>
+
+                    <a class="btn btn-lg btn-outline-success fs-2 rounded-0"
+                        href="https://linkedin.com/in/vascodmarques"><i class="bi bi-linkedin"></i></a>
+
+                    <a class="btn btn-lg btn-outline-success fs-2 rounded-0" href="tabascum#8202"><i
+                            class="bi bi-discord"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="container text-center p-1">
+                <p class="fs-6"><strong class="text-success">tabascum.io</strong> &#169; made by Vasco Marques 2022
+                    &#183;
+                    All rights
+                    reserved</a></p>
+            </div>
+        </div>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
