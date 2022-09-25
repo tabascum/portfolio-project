@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- AOS Lib animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>tabascum.io</title>
 </head>
 
@@ -24,7 +26,8 @@
     <header class="mb-5">
         <nav class="navbar navbar-expand-lg nav-pills navbar-dark pt-4">
             <div class="container">
-                <div class="navbar-brand text-success border border-2 pt-2 ps-2 pe-2 fs-1 shadow" href="#">
+                <div class="navbar-brand text-success border border-2 pt-2 px-3 fs-1 shadow" href="index.html"
+                    data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="fw-bolder fs-1">VM</h1>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,16 +36,16 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav fs-5">
-                        <li class="nav-item">
+                        <li class="nav-item" data-aos="fade-down" data-aos-duration="1250">
                             <a class="nav-link text-success m-2" aria-current="page" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-aos="fade-down" data-aos-duration="1000">
                             <a class="nav-link text-success m-2" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-aos="fade-down" data-aos-duration="750">
                             <a class="nav-link text-success m-2" href="#projects">Projects</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" data-aos="fade-down" data-aos-duration="500">
                             <a class="nav-link m-2 text-success border rounded-0" data-bs-toggle="offcanvas"
                                 href="#offcanvasContact" role="button" aria-controls="offcanvasContact">Contact</a>
                         </li>
@@ -56,23 +59,27 @@
         <div class="container text-center border-start border-end border-info py-5">
             <div class="py-5">
                 <div class="py-5">
-                    <p>Hi, I am</p>
-                    <h2 class="fw-semibold">VASCO MARQUES</h2>
-                    <h1 class="text-success fw-bolder typedOut">FRONTEND WEB DEVELOPER</h1>
+                    <p class="fs-4">Hi, I am</p>
+                    <h2 class="fw-semibold" data-aos="fade-left" data-aos-duration="1250">VASCO MARQUES</h2>
+                    <h1 class="text-success fw-bolder typedOut" data-aos="fade-right" data-aos-duration="1250">FRONTEND
+                        WEB DEVELOPER
+
+                    </h1>
                 </div>
             </div>
         </div>
     </div>
     <main class="container">
         <!-- About section -->
-        <div class="row about my-5">
-            <div class="row row-cols-md-2 cols-sm-1 g-1 text-center justify-content-center" id="about">
+        <div class="row about my-5 py-5">
+            <div class="row row-cols-md-2 cols-sm-1 g-1 text-center justify-content-center" id="about"
+                data-aos="fade-up" data-aos-duration="2000">
                 <div class="row-cols-2">
-                    <img class="img-fluid rounded-circle" src="./img/profile.webp" alt="personal picture">
+                    <img class=" img-fluid rounded-circle" src="./img/profile.webp" alt="personal picture">
                 </div>
                 <div class="cols">
                     <div class="container text-start">
-                        <h1 class="text-success border-bottom border-info fw-semibold">WHO AM I?</h1>
+                        <h1 class="text-success border-bottom border-info fw-bolder">WHO AM I?</h1>
                         <p>I'm a front-end web developer based in Lisbon, Portugal.</p>
                         <p>Commited with the projects I'm working with, I'm driven by curiosity and the aim to present
                             the
@@ -85,14 +92,14 @@
             </div>
         </div>
         <!-- Projects container -->
-        <div class="container projects row py-5" id="work">
+        <div class="container projects row py-5 my-5" id="work" data-aos="fade-up" data-aos-duration="2000">
             <div class="text-end">
-                <h1 class="text-success border-bottom border-info fw-semibold">PROJECTS</h1>
+                <h1 class="text-success border-bottom border-info fw-bolder">PROJECTS</h1>
                 <p>Here are some of the projects I've built with HTML, CSS and JS</p>
             </div>
-            <div class="row row-cols-1 row-cols-md-2 g-2">
+            <div class="row row-cols-1 row-cols-md-2 p-0 m-0 g-4">
                 <div class="col">
-                    <div class="card rounded-0 border-0 shadow bg-dark">
+                    <div class="card rounded-0 border-0 shadow bg-dark" data-aos="fade-right" data-aos-duration="2000">
                         <img src="./img/parallax.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Parties Landing Page</h5>
@@ -106,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card rounded-0 border-0 shadow bg-dark">
+                    <div class="card rounded-0 border-0 shadow bg-dark" data-aos="fade-left" data-aos-duration="2000">
                         <img src="./img/avoidthebush.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Game</h5>
@@ -119,7 +126,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card rounded-0 border-0 shadow bg-dark">
+                    <div class="card rounded-0 border-0 shadow bg-dark" data-aos="fade-right" data-aos-duration="2000">
                         <img src="./img/barberlandingpage.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Barbershop Landing Page</h5>
@@ -132,7 +139,7 @@
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card rounded-0 border-0 shadow bg-dark">
+                    <div class="card rounded-0 border-0 shadow bg-dark" data-aos="fade-left" data-aos-duration="2000">
                         <img src="./img/calc.webp" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Calculator</h5>
@@ -195,8 +202,8 @@
             </div>
         </div>
         <div class="container">
-            <div class="container text-center p-1">
-                <p class="fs-6"><strong class="text-success">tabascum.io</strong> &#169; made by Vasco Marques 2022
+            <div class=" container text-center p-1">
+                <p class=" fs-6"><strong class="text-success">tabascum.io</strong> &#169; made by Vasco Marques 2022
                     &#183;
                     All rights
                     reserved</a></p>
@@ -204,6 +211,10 @@
         </div>
     </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init()
+    </script>
 </body>
 
 </html>
