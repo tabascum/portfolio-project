@@ -20,7 +20,9 @@ $primary: $green;
 $secondary: $cyan;
 $shadow: $gray-900;
 
-// font size
+// border
+
+$border-radius: none;
 
 //import Bootstrap
 @use "../node_modules/bootstrap/scss/bootstrap.scss";

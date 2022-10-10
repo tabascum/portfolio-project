@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="HTML, CSS, Bulma, JavaScript">
+    <meta name="keywords" content="HTML, CSS, Bootstrap, JavaScript">
     <meta name="author" content="Vasco Marques">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,6 +22,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/custom.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- AOS Lib animation -->
@@ -26,10 +32,10 @@
 
 <body class="container bg-dark text-light">
     <!-- Navbar -->
-    <header class="mb-5">
-        <nav class="navbar navbar-expand-lg nav-pills navbar-dark pt-4">
+    <header class="container mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark pt-4">
             <div class="container">
-                <div class="navbar-brand text-success border border-2 pt-2 px-3 fs-1 shadow" href="index.html"
+                <div class="navbar-brand text-success border border-2 pt-2 px-2 fs-1 shadows" href="index.html"
                     data-aos="fade-down" data-aos-duration="1000">
                     <h1 class="fw-bolder fs-1">VM</h1>
                 </div>
@@ -49,8 +55,8 @@
                             <a class="nav-link text-success m-2" href="#projects">Projects</a>
                         </li>
                         <li class="nav-item" data-aos="fade-down" data-aos-duration="500">
-                            <a class="nav-link m-2 text-success border rounded-0" data-bs-toggle="offcanvas"
-                                href="#offcanvasContact" role="button" aria-controls="offcanvasContact">Contact</a>
+                            <a class="nav-link m-2 contact btn btn-outline-success" data-bs-toggle="offcanvas"
+                                href="#contact" role="button" aria-controls="offcanvasContact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -60,8 +66,8 @@
     <!-- Hero section -->
     <div class="container text-center border-start border-end border-info py-5">
         <div class="container text-center border-start border-end border-info py-5">
-            <div class="container py-5">
-                <div class="py-5">
+            <div class="container py-5" data-aos="fade-up" data-aos-duration="1250">
+                <div class="container py-5">
                     <p class="fs-4">Hi, I am</p>
                     <h2 class="fw-semibold" data-aos="fade-left" data-aos-duration="1250">VASCO MARQUES</h2>
                     <h1 class="text-success fw-bolder typedOut" data-aos="fade-right" data-aos-duration="1250">
@@ -73,7 +79,7 @@
             </div>
         </div>
     </div>
-    <main class="container">
+    <main class="container-fluid">
         <!-- About section -->
         <div class="container" id="about">
             <div class="row my-5 py-5">
@@ -106,10 +112,9 @@
                     <h1 class="text-success border-bottom border-info fw-bolder">PROJECTS</h1>
                     <p>Here are some of the projects I've built with HTML, CSS and JS</p>
                 </div>
-                <div class="container row row-cols-1 row-cols-md-2 p-0 m-0 g-4">
-                    <div class="col">
-                        <div class="card rounded-0 border-0 shadow bg-dark" data-aos="fade-right"
-                            data-aos-duration="2000">
+                <div class="container row row-cols-1 row-cols-md-2 p-0 m-0 g-4 align-middle">
+                    <div class="cols-sm-1">
+                        <div class="card rounded-0 border-0 bg-dark" data-aos="fade-right" data-aos-duration="2000">
                             <img src="./img/parallax.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Parties Landing Page</h5>
@@ -123,9 +128,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card rounded-0 border-0 shadow bg-dark" data-aos="fade-left"
-                            data-aos-duration="2000">
+                    <div class="cols-sm-1">
+                        <div class="card rounded-0 border-0 bg-dark" data-aos="fade-left" data-aos-duration="2000">
                             <img src="./img/avoidthebush.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Game</h5>
@@ -137,9 +141,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card rounded-0 border-0 shadow bg-dark" data-aos="fade-right"
-                            data-aos-duration="2000">
+                    <div class="cols-sm-1">
+                        <div class="card rounded-0 border-0 bg-dark" data-aos="fade-right" data-aos-duration="2000">
                             <img src="./img/barberlandingpage.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Barbershop Landing Page</h5>
@@ -151,9 +154,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card rounded-0 border-0 shadow bg-dark" data-aos="fade-left"
-                            data-aos-duration="2000">
+                    <div class="cols-sm-1">
+                        <div class="card rounded-0 border-0 bg-dark" data-aos="fade-left" data-aos-duration="2000">
                             <img src="./img/calc.webp" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">Calculator</h5>
@@ -170,13 +172,12 @@
             </div>
         </div>
         <!-- Contact Offcanvas -->
-        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasContact"
-            aria-labelledby="offcanvasContact">
+        <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="contact" aria-labelledby="offcanvasContact">
             <div class="offcanvas-header">
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <div class="container-fluid contact py-5">
+                <div class="container-fluid py-5">
                     <div class="container contact-header p-3">
                         <h1 class="border-bottom text-success border-info fw-semibold">CONTACT</h1>
                         <p>Want know more about my work?</p>

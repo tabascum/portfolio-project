@@ -1,0 +1,27 @@
+/* Header styles */
+
+.nav-link {
+  border: 1px solid transparent;
+  transition: 0.7s;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid #3bd5c3ab;
+}
+
+.contact {
+  background-color: #3bd5c3;
+  color: #282828;
+  border-radius: 0;
+  box-shadow: 0rem 0.2rem 0.8rem #004749;
+}
+
+.contact:hover {
+  box-shadow: 0rem 0.2rem 0.8rem #3bd5c3;
+}
+
+/* Shadow style for boxes */
+
+.shadows {
+  box-shadow: 0rem 0.2rem 0.8rem #3bd5c3;
+}
